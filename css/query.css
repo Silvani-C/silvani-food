@@ -1,0 +1,181 @@
+@media  (max-width: 991px) {
+    header {
+        background: #fff;   
+    }
+    header .logo{
+        color: #111;
+    }
+    header{
+        padding: 10px 20px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{/*ul-ativada*/
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;  
+        top: 68px;    
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        list-style: none;
+        padding: 10px;
+        margin: 10px 10%;       
+    }
+    header .navigation li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+        text-align: center;      
+    }
+    .menuTobble{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuTobble.active{
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header .sticky  .menuTobble{
+     filter: invert(1);
+    }
+    /*sobre*/
+    .sobre{
+        padding: 100px;
+        text-align: center;
+    } 
+    .banner  .content-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 10px;
+    }
+    .banner .content-banner h2{
+       font-size: 1.8em;
+       margin: 10px;
+    }
+    .banner .content-banner p{
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+    .banner .content-banner h2{
+        font-size: 3em;
+    }
+    /*sobre*/
+    .sobre .titulo{
+        padding-top: 60px;
+    }
+    .title{
+        font-size: 0.8em;
+    }  
+    .titulo{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;       
+    }
+    .row .col50 .imgBox{
+        height: 300px;
+        margin-top: 20px;
+    }
+    /*menu*/
+    .menu .titulo{
+        padding-top: 60px;
+    }
+    .menu .content-menu{
+        margin-top: 20px;
+    }
+    .menu .content-menu .box{    
+        margin: 20px;
+    }
+    .menu .content-menu .box .imgbox{
+        height:260px;
+    }
+   .menu .p{
+        text-align: center; 
+        width: 300px;   
+    }
+    /*especilidades*/
+   .especialidades .titulo{
+    padding-top: 60px;  
+   }
+    .content-especilidades .box{
+        width: 70%;
+    }
+    /*contatos*/
+    .contatos{
+        background: #ccccccbf;
+        padding: 20px 5px;
+    }
+    .contactForm{      
+        max-width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contatos .p{
+        text-align: center;
+        width: 300px;
+    }   
+}
+@media (max-width: 414px) {
+    .banner .content-banner{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .content-banner h2{
+        font-size: 2em;
+        width: 80%;
+        padding-top: 80px;
+    }
+    .banner .content-banner p{
+        width: 80%;
+    }
+    .sobre{
+        padding: 30px;
+    }
+    .especialidades{
+        padding: 5px;
+        margin-top: 30px;
+    }
+    .contatos{
+        width: 100%;
+    }
+    .contactForm{   
+        padding: 65px 10px;   
+    }
+    footer{
+        background: url(../img/rodape1.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,358 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+}
+.banner .content-banner{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content-banner h2{
+    font-size: 4em;
+    color: #fff;   
+}
+.banner .content-banner h2 span{
+    color: #ff0157;
+}
+P{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1 1 0 #000;
+}
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+    background: rgba(0, 0, 0, 0.2);
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span{
+    color:  #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+}
+header .navigation li a:hover{
+    color:  #ff0157;
+}
+header .sticky .navigation li a{
+    color: #111;
+}
+/*Sobre*/
+.sobre{
+    padding: 180px 100px;
+    margin-top: 40px;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    width: 48%;
+}
+.titulo{/*sobre*/
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titulo span{
+    color:#ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*menu*/
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content-menu .box{
+    width: 340px;
+    margin: 30px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+}
+.menu .content-menu .box .imgbox{
+    position: relative;
+    width:100% ;
+    height:300px ;
+}
+.menu .content-menu .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content-menu .box .text{
+    padding: 15px 0 5px;
+}
+.menu .content-menu .box .text h3{
+    font-weight: 400;
+    color: #111;
+    text-align: center;
+}
+.menu  .title a{
+    margin-bottom: 30px;
+}
+/*Especialidades Pratos*/
+.especialidades{
+    padding: 100px;
+    margin-top: 30px;
+}
+.especialidades .content-especilidades{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.content-especilidades .box{
+    width:250px;
+    margin: 20px;
+}
+.content-especilidades .box .imgBox{
+    position: relative;
+    width:100% ;
+    height: 300px;
+}
+.content-especilidades .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    object-fit: cover;
+}
+.content-especilidades .box .text{
+    padding: 15px 0 5px;
+}
+.content-especilidades .box .text h3{
+    text-align: center;
+    color: #111;
+    font-weight: 400;
+}
+/*Depoimentos*/
+.depoimentos{
+    background: url(../img/prato-esp-0.jpg);
+    background-size: cover;
+    padding: 30px;
+}
+.fundo .titulo, .fundo p{
+    color: #fff;
+}
+.content-depoimento{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.content-depoimento .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+.content-depoimento .box .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.content-depoimento .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100% ;
+    height: 100%;
+    object-fit:fill;
+}
+.depoimentos .content-depoimento .box .text{
+    text-align: center;
+}
+.depoimentos .content-depoimento .box .text p{
+    color: #666;
+    font-style: initial;
+}
+.depoimentos .content-depoimento .box .text h3{
+    margin-top: 20px;
+    font-size: 1em;
+    color: #ff0157;
+}
+/*contatos*/
+.contatos{
+    background: url(../img/contact.png);
+    background-size: cover;
+    background-position: center;
+}
+.contatos .title h2{
+    margin-top: 40px;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px;
+    margin-left: 250px;
+    border-radius: 5px;
+}
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solis #555;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #FFF;
+    background: #ff0157;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+}
+/*rodape*/
+footer{
+    background: url(../img/rodape.png);
+    background-size: cover;
+    padding: 30px;
+    width: 100%;
+    height: 160px;
+}
+.copyrightTexto{
+    padding: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.copyrightTexto p{
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px #000;
+}
+.copyrightTexto a{
+    color: #ff0157;
+    font-weight: 800;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #fff;  
+}
+
+
+
+
+
